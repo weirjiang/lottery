@@ -7,10 +7,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Insert title here</title>
-<script src="/lottery-core/res/jquery/jquery-1.8.0.js" type="text/javascript"></script>
-<script src="/lottery-core/res/jquery/jquery-1.8.0.min.js" type="text/javascript"></script>
-<script src="/lottery-core/js/cloud.js" type="text/javascript"></script>
-<link href="/lottery-core/css/style.css" rel="stylesheet" type="text/css" />
+<script src="/lottery/res/jquery/jquery-1.8.0.js" type="text/javascript"></script>
+<script src="/lottery/res/jquery/jquery-1.8.0.min.js" type="text/javascript"></script>
+<script src="/lottery/js/cloud.js" type="text/javascript"></script>
+<link href="/lottery/css/style.css" rel="stylesheet" type="text/css" />
 <script language="javascript">
 	$(function(){
 		initpage();
@@ -52,7 +52,7 @@
 </script> 
 
 </head>
-<body style="background-color:#1c77ac; background-image:url(lottery-core/img/light.png); background-repeat:no-repeat; background-position:center top; overflow:hidden;">
+<body style="background-color:#1c77ac; background-image:url(lottery/img/light.png); background-repeat:no-repeat; background-position:center top; overflow:hidden;">
 
 
 
@@ -73,7 +73,7 @@
     <span class="systemlogo"></span> 
     <input type="hidden" id="LoginInfo" value="${error}"></input>
     <div class="loginbox">
-    <form name="loginForm" class="loginForm" action="/lottery-core/userLogin.do" method="post">
+    <form name="loginForm" class="loginForm" action="/lottery/userLogin.do" method="post">
     <ul>
     <li><input name="userName" type="text" class="loginuser" /></li>
     <li><input name="password" type="password" class="loginpwd" /></li>

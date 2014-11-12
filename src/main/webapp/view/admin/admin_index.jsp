@@ -8,41 +8,41 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>简单实用国产jQuery UI框架 - DWZ富客户端框架(J-UI.com)</title>
 
-<link href="/lottery-core/res/dwz-ria/themes/default/style.css" rel="stylesheet" type="text/css" media="screen"/>
-<link href="/lottery-core/res/dwz-ria/themes/css/core.css" rel="stylesheet" type="text/css" media="screen"/>
-<link href="/lottery-core/res/dwz-ria/themes/css/print.css" rel="stylesheet" type="text/css" media="print"/>
-<link href="/lottery-core/res/dwz-ria/uploadify/css/uploadify.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="/lottery/res/dwz-ria/themes/default/style.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="/lottery/res/dwz-ria/themes/css/core.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="/lottery/res/dwz-ria/themes/css/print.css" rel="stylesheet" type="text/css" media="print"/>
+<link href="/lottery/res/dwz-ria/uploadify/css/uploadify.css" rel="stylesheet" type="text/css" media="screen"/>
 
-<script src="/lottery-core/res/dwz-ria/js/jquery-1.7.2.js" type="text/javascript"></script>
-<script src="/lottery-core/res/dwz-ria/js/jquery.cookie.js" type="text/javascript"></script>
-<script src="/lottery-core/res/dwz-ria/js/jquery.validate.js" type="text/javascript"></script>
-<script src="/lottery-core/res/dwz-ria/js/jquery.bgiframe.js" type="text/javascript"></script>
-<script src="/lottery-core/res/dwz-ria/xheditor/xheditor-1.2.1.min.js" type="text/javascript"></script>
-<script src="/lottery-core/res/dwz-ria/xheditor/xheditor_lang/zh-cn.js" type="text/javascript"></script>
-<script src="/lottery-core/res/dwz-ria/uploadify/scripts/jquery.uploadify.js" type="text/javascript"></script>
+<script src="/lottery/res/dwz-ria/js/jquery-1.7.2.js" type="text/javascript"></script>
+<script src="/lottery/res/dwz-ria/js/jquery.cookie.js" type="text/javascript"></script>
+<script src="/lottery/res/dwz-ria/js/jquery.validate.js" type="text/javascript"></script>
+<script src="/lottery/res/dwz-ria/js/jquery.bgiframe.js" type="text/javascript"></script>
+<script src="/lottery/res/dwz-ria/xheditor/xheditor-1.2.1.min.js" type="text/javascript"></script>
+<script src="/lottery/res/dwz-ria/xheditor/xheditor_lang/zh-cn.js" type="text/javascript"></script>
+<script src="/lottery/res/dwz-ria/uploadify/scripts/jquery.uploadify.js" type="text/javascript"></script>
 
 <!-- svg图表  supports Firefox 3.0+, Safari 3.0+, Chrome 5.0+, Opera 9.5+ and Internet Explorer 6.0+ -->
-<script type="text/javascript" src="/lottery-core/res/dwz-ria/chart/raphael.js"></script>
-<script type="text/javascript" src="/lottery-core/res/dwz-ria/chart/g.raphael.js"></script>
-<script type="text/javascript" src="/lottery-core/res/dwz-ria/chart/g.bar.js"></script>
-<script type="text/javascript" src="/lottery-core/res/dwz-ria/chart/g.line.js"></script>
-<script type="text/javascript" src="/lottery-core/res/dwz-ria/chart/g.pie.js"></script>
-<script type="text/javascript" src="/lottery-core/res/dwz-ria/chart/g.dot.js"></script>
+<script type="text/javascript" src="/lottery/res/dwz-ria/chart/raphael.js"></script>
+<script type="text/javascript" src="/lottery/res/dwz-ria/chart/g.raphael.js"></script>
+<script type="text/javascript" src="/lottery/res/dwz-ria/chart/g.bar.js"></script>
+<script type="text/javascript" src="/lottery/res/dwz-ria/chart/g.line.js"></script>
+<script type="text/javascript" src="/lottery/res/dwz-ria/chart/g.pie.js"></script>
+<script type="text/javascript" src="/lottery/res/dwz-ria/chart/g.dot.js"></script>
 
-<script src="/lottery-core/res/jquery/jquery-1.8.0.js" type="text/javascript"></script>
-<script src="/lottery-core/res/jquery/jquery-1.8.0.min.js" type="text/javascript"></script>
+<script src="/lottery/res/jquery/jquery-1.8.0.js" type="text/javascript"></script>
+<script src="/lottery/res/jquery/jquery-1.8.0.min.js" type="text/javascript"></script>
 
-<script src="/lottery-core/res/dwz-ria/bin/dwz.min.js" type="text/javascript"></script>
+<script src="/lottery/res/dwz-ria/bin/dwz.min.js" type="text/javascript"></script>
 
-<script src="/lottery-core/res/dwz-ria/js/dwz.regional.zh.js" type="text/javascript"></script>
+<script src="/lottery/res/dwz-ria/js/dwz.regional.zh.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 $(function(){
-	DWZ.init("/lottery-core/res/dwz-ria/dwz.frag.xml", {
+	DWZ.init("/lottery/res/dwz-ria/dwz.frag.xml", {
 		debug:false,	// 调试模式 【true|false】
 		callback:function(){
 			initEnv();
-			$("#themeList").theme({themeBase:"/lottery-core/res/dwz-ria/themes"}); // themeBase 相对于index页面的主题base路径
+			$("#themeList").theme({themeBase:"/lottery/res/dwz-ria/themes"}); // themeBase 相对于index页面的主题base路径
 		}
 	});
 });
@@ -57,7 +57,7 @@ $(function(){
 				<a class="logo" href="http://j-ui.com">标志</a>
 				<ul class="nav">
 					<li><a>你好管理员：${sessionScope.userId}</a></li>
-					<li><a href="/lottery-core/loginOut.do">退出</a></li>
+					<li><a href="/lottery/loginOut.do">退出</a></li>
 				</ul>
 				<ul class="themeList" id="themeList">
 					<li theme="default"><div class="selected">蓝色</div></li>
@@ -90,13 +90,11 @@ $(function(){
 						<ul class="tree treeFolder">
 							<li><a href="tabsPage.html" target="navTab">主界面</a>
 								<ul>
-									<li><a href="/lottery-core/view/admin/addActivity.jsp" target="dialog" rel="userLogin">添加活动</a></li>
+									<li><a href="/lottery/view/admin/addActivity.jsp" target="dialog" rel="userLogin">添加活动</a></li>
 									<li><a href="test.jsp" target="navTab" rel="test">测试</a></li>
-									<li><a href="/lottery-core/view/admin/activity_manage.jsp" target="navTab" rel="activity_manage">活动管理</a></li>
+									<li><a href="/lottery/view/admin/activity_manage.jsp" target="navTab" rel="activity_manage">活动管理</a></li>
 								</ul>
 							</li>
-							
-									
 						</ul>
 					</div>
 		

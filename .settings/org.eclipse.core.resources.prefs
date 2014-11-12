@@ -1,5 +1,11 @@
 eclipse.preferences.version=1
+encoding//src/main/java=UTF-8
+encoding//src/main/java/com/weir/controller/AdminController.java=UTF-8
+encoding//src/main/java/com/weir/controller/UserController.java=UTF-8
+encoding//src/main/resources=UTF-8
 encoding//src/main/webapp/view/sys/sys_index.jsp=UTF-8
 encoding//src/main/webapp/view/sys/userLogin.jsp=UTF-8
 encoding//src/main/webapp/view/user/jionActivity.jsp=UTF-8
 encoding//src/main/webapp/view/user/user_index.jsp=UTF-8
+encoding//src/test/java=UTF-8
+encoding/<project>=UTF-8
